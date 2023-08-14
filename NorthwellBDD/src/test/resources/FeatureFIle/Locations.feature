@@ -6,5 +6,3 @@ Feature: Locations functionality
     And User clicks on "zip code or city" search bar
     And User enters zip code "11373"
     Then User should see physicians nearby the zip code of 11373
-    
-
