@@ -1,23 +1,10 @@
-ture: Title of your feature
-  I want to use this template for my feature file
+Feature: Locations functionality
+@sanity
+  Scenario: User should be able to view health clinics
+    Given User is on the Northwell Homepage
+    When User clicks on Locations button on top menu bar
+    And User clicks on "zip code or city" search bar
+    And User enters zip code "11373"
+    Then User should see physicians nearby the zip code of 11373
+    
 
-  @tag1
-  Scenario: Title of your scenario
-    Given I want to write a step with precondition
-    And some other precondition
-    When I complete action
-    And some other action
-    And yet another action
-    Then I validate the outcomes
-    And check more outcomes
-
-  @tag2
-  Scenario Outline: Title of your scenario outline
-    Given I want to write a step with <name>
-    When I check for the <value> in step
-    Then I verify the <status> in step
-
-    Examples: 
-      | name  | value | status  |
-      | name1 |     5 | success |
-      | name2 |     7 | Fail    |
