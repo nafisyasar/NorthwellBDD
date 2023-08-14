@@ -1,5 +1,6 @@
 Feature: Locations functionality
-@sanity
+
+  @sanity
   Scenario: User should be able to view health clinics
     Given User is on the Northwell Homepage
     When User clicks on Locations button on top menu bar
