@@ -1,7 +1,9 @@
 package northwellActions;
 
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
@@ -20,12 +22,13 @@ public class LocationsActions {
 	}
 	
 	public void getHomePage() {
-		WebDriverSetup.driver.get("www.northwell.edu/");
-		WebDriverSetup.driver.manage().deleteAllCookies();
+		WebDriverSetup.driver.get("https://www.northwell.edu/");
+		WebDriverSetup.driver.manage().window().maximize();
 	}
 	
 	
 	public void clickOnLocationsButton() {
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("accessible-megamenu-1691695670103-3")));
 		elements.LocationsButton.click();
 		
 	}
