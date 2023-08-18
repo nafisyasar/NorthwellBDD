@@ -11,7 +11,7 @@ public class BeforeClass {
 		System.out.println(">>> ChromeDriver Initialization <<<");
 		try {
 			WebDriverSetup.SetUpChromeDriver();
-			System.out.println(">>> ChromeDriver Initialized");
+			System.out.println(">>> ChromeDriver Initialized <<<");
 			System.out.println(scen.getName());
 		} catch (Exception e) {
 			System.out.println(">>> ChromeDriver Initialization has failed");
