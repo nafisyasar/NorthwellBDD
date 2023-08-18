@@ -16,7 +16,7 @@ public class LocationsActions {
 	WebDriverWait wait = new WebDriverWait(WebDriverSetup.driver, 30);
 	
 	public LocationsActions() {
-		elements = new LocationsElements();
+		this.elements = new LocationsElements();
 		PageFactory.initElements(WebDriverSetup.driver, elements);
 		
 	}
@@ -24,11 +24,12 @@ public class LocationsActions {
 	public void getHomePage() {
 		WebDriverSetup.driver.get("https://www.northwell.edu/");
 		WebDriverSetup.driver.manage().window().maximize();
+		
 	}
 	
 	
 	public void clickOnLocationsButton() {
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("accessible-megamenu-1691695670103-3")));
+		wait.until(ExpectedConditions.elementToBeClickable(By.id("//accessible-megamenu-1691695670103-3")));
 		elements.LocationsButton.click();
 		
 	}

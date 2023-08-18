@@ -1,4 +1,3 @@
-@tag
 Feature: Gifts feature
   I want to use this template for my feature file
 
